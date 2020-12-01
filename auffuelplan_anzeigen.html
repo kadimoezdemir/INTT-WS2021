@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Allgold Premium Molkerei GmbH - Startseite</title>
+    <title>Allgold Supply Center</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/nav.css" rel="stylesheet"/>
-    <script src="js/time.js"></script>
 </head>
-<body>
+
+<body onload="listStationIds(); listFillingPlan();">
 <div id="main">
     <div id="trailer">
         <img src="media/trailer.jpg" width="750" height="150" alt="trailer">
@@ -19,21 +19,34 @@
                 <a href="/">Startseite</a>
                 <a href="lieferanten.html"><b>Lieferanten</b></a>
                 <a href="verkaufsstellen.html">Verkaufstellen</a>
+                <a href="sonstiges.html">Sonstiges</a>
             </li>
         </ul>
     </div>
     <!-- page content -->
     <div id="content" style="padding-bottom:20px">
-        <h3>Lieferanten</h3>
-        <a href="auffuellungen_anzeigen.html"> Auffuellungen anzeigen </a><br>
-        <a href="auffuelplan_anzeigen.html"> Auffüllplan anzeigen </a><br>
+
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Auffüllplan anzeigen</legend>
+            <label for="verkaufsstelle">Verkaufsstelle</label>
+            <select name="station" id="verkaufsstelle" onchange="listFillingPlan()">
+            </select>
+
+            <fieldset id="list">
+                <legend>Suchergebnis</legend>
+                <table id="verkaufsstelle-liste" style="border: 1px solid black">
+
+                </table>
+            </fieldset>
+        </fieldset>
     </div>
 
     <div id="menuefooter" class="clmenuefooter">
     </div>
 
     <div id="bottom">
-    </div>
     </div>
 </div>
 </body>
