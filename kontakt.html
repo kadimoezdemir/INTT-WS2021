@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Allgold Premium Molkerei GmbH - Kontakt</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/nav.css" rel="stylesheet"/>
+    <script src="js/time.js"></script>
+</head>
+<body>
+<div id="main">
+    <div id="trailer">
+        <img src="media/trailer.jpg" width="750" height="150" alt="trailer">
+    </div>
+    <div id="menuetop">
+        <ul id="menu">
+            <li>
+                <a href="lieferanten.html">Startseite</a>
+                <a href="lieferanten.html">Lieferanten</a>
+                <a href="verkaufsstellen.html">Verkaufstellen</a>
+                <a href="sonstiges.html">Sonstiges</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content" style="padding-bottom:20px">
+        <!-- page content -->
+        <form action="mail.php" method="POST">
+            <p>Name</p> <input type="text" name="name">
+            <p>E-Mail</p> <input type="text" name="email">
+            <p>Telefon</p> <input type="text" name="phone">
+
+            <p>Rückanruf gewünscht:</p>
+            Yes:<input type="checkbox" value="Yes" name="call"><br/>
+            No:<input type="checkbox" value="No" name="call"><br/>
+
+            <p>Webseite</p> <input type="text" name="website">
+
+            <p>Priorität</p>
+            <select name="priority" size="1">
+                <option value="Low">niedrig</option>
+                <option value="Normal">normal</option>
+                <option value="High">hoch</option>
+                <option value="Emergency">Notfall</option>
+            </select>
+            <br/>
+
+            <p>Type</p>
+            <select name="type" size="1">
+                <option value="update">Webseite Updates</option>
+                <option value="change">Informationsänderungen</option>
+                <option value="addition">neue Informationen</option>
+                <option value="new">neue Produkte</option>
+            </select>
+            <br/>
+
+            <p>Nachricht</p><textarea name="message" rows="6" cols="25"></textarea><br/>
+            <input type="submit" value="Send"><input type="reset" value="Clear">
+        </form>
+
+    </div>
+    <div id="menuefooter" class="clmenuefooter">
+    </div>
+    <div id="bottom" class="center">
+        <a>© Allgold Premium Molkerei GmbH</a> |
+        <a href="impressum.html"> Impressum</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,6 +1,7 @@
 <?php
 //Einfache version ohne Framework, berücksichtigt das die meißten Browser kein PUT und DELETE unterstützen
 
+
 class station
 {
    private $db;
@@ -14,7 +15,7 @@ class station
       	die("error while connection to database!:".mysqli_connect_error());
       }
 
-      $this->db->select_db("allgoldDB");
+      $this->db->select_db("allgolddb");
 
       if($this->db->errno)
       {

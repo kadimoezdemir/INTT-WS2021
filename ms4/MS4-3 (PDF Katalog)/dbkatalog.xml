@@ -1,0 +1,2448 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="itdb">
+	<table_structure name="inventory">
+		<field Field="inventoryID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="stationID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="productID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="currentAmount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="plannedAmount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="inventory" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="inventoryID" Collation="A" Cardinality="96" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="inventory" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="97" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="inventory">
+	<row>
+		<field name="inventoryID">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">20</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">2</field>
+		<field name="stationID">1</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">3</field>
+		<field name="stationID">1</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">15</field>
+		<field name="plannedAmount">30</field>
+	</row>
+	<row>
+		<field name="inventoryID">4</field>
+		<field name="stationID">1</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">5</field>
+		<field name="stationID">1</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">15</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">6</field>
+		<field name="stationID">1</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">30</field>
+		<field name="plannedAmount">30</field>
+	</row>
+	<row>
+		<field name="inventoryID">7</field>
+		<field name="stationID">1</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">8</field>
+		<field name="stationID">1</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">30</field>
+		<field name="plannedAmount">30</field>
+	</row>
+	<row>
+		<field name="inventoryID">9</field>
+		<field name="stationID">2</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">10</field>
+		<field name="stationID">2</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">11</field>
+		<field name="stationID">2</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">30</field>
+		<field name="plannedAmount">30</field>
+	</row>
+	<row>
+		<field name="inventoryID">12</field>
+		<field name="stationID">2</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">13</field>
+		<field name="stationID">2</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">14</field>
+		<field name="stationID">2</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">30</field>
+		<field name="plannedAmount">30</field>
+	</row>
+	<row>
+		<field name="inventoryID">15</field>
+		<field name="stationID">2</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">16</field>
+		<field name="stationID">2</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">30</field>
+		<field name="plannedAmount">30</field>
+	</row>
+	<row>
+		<field name="inventoryID">17</field>
+		<field name="stationID">3</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">18</field>
+		<field name="stationID">3</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">19</field>
+		<field name="stationID">3</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">20</field>
+		<field name="stationID">3</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">21</field>
+		<field name="stationID">3</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">22</field>
+		<field name="stationID">3</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">23</field>
+		<field name="stationID">3</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">24</field>
+		<field name="stationID">3</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">25</field>
+		<field name="stationID">4</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">26</field>
+		<field name="stationID">4</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">27</field>
+		<field name="stationID">4</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">28</field>
+		<field name="stationID">4</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">29</field>
+		<field name="stationID">4</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">30</field>
+		<field name="stationID">4</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">31</field>
+		<field name="stationID">4</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">32</field>
+		<field name="stationID">4</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">33</field>
+		<field name="stationID">5</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">34</field>
+		<field name="stationID">5</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">35</field>
+		<field name="stationID">5</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">36</field>
+		<field name="stationID">5</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">37</field>
+		<field name="stationID">5</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">38</field>
+		<field name="stationID">5</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">39</field>
+		<field name="stationID">5</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">40</field>
+		<field name="stationID">5</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">41</field>
+		<field name="stationID">6</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">42</field>
+		<field name="stationID">6</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">43</field>
+		<field name="stationID">6</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">44</field>
+		<field name="stationID">6</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">45</field>
+		<field name="stationID">6</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">46</field>
+		<field name="stationID">6</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">47</field>
+		<field name="stationID">6</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">48</field>
+		<field name="stationID">6</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">49</field>
+		<field name="stationID">7</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">50</field>
+		<field name="stationID">7</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">51</field>
+		<field name="stationID">7</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">52</field>
+		<field name="stationID">7</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">53</field>
+		<field name="stationID">7</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">54</field>
+		<field name="stationID">7</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">55</field>
+		<field name="stationID">7</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">56</field>
+		<field name="stationID">7</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">57</field>
+		<field name="stationID">8</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">58</field>
+		<field name="stationID">8</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">59</field>
+		<field name="stationID">8</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">60</field>
+		<field name="stationID">8</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">61</field>
+		<field name="stationID">8</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">62</field>
+		<field name="stationID">8</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">63</field>
+		<field name="stationID">8</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">64</field>
+		<field name="stationID">8</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">65</field>
+		<field name="stationID">9</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">66</field>
+		<field name="stationID">9</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">67</field>
+		<field name="stationID">9</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">68</field>
+		<field name="stationID">9</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">69</field>
+		<field name="stationID">9</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">70</field>
+		<field name="stationID">9</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">71</field>
+		<field name="stationID">9</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">72</field>
+		<field name="stationID">9</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">73</field>
+		<field name="stationID">10</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">74</field>
+		<field name="stationID">10</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">75</field>
+		<field name="stationID">10</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">76</field>
+		<field name="stationID">10</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">77</field>
+		<field name="stationID">10</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">78</field>
+		<field name="stationID">10</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">79</field>
+		<field name="stationID">10</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">80</field>
+		<field name="stationID">10</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">81</field>
+		<field name="stationID">11</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">82</field>
+		<field name="stationID">11</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">83</field>
+		<field name="stationID">11</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">84</field>
+		<field name="stationID">11</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">85</field>
+		<field name="stationID">11</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">86</field>
+		<field name="stationID">11</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">87</field>
+		<field name="stationID">11</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">88</field>
+		<field name="stationID">11</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">89</field>
+		<field name="stationID">12</field>
+		<field name="productID">1</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">90</field>
+		<field name="stationID">12</field>
+		<field name="productID">2</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">91</field>
+		<field name="stationID">12</field>
+		<field name="productID">3</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">92</field>
+		<field name="stationID">12</field>
+		<field name="productID">4</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">93</field>
+		<field name="stationID">12</field>
+		<field name="productID">5</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">94</field>
+		<field name="stationID">12</field>
+		<field name="productID">6</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">95</field>
+		<field name="stationID">12</field>
+		<field name="productID">7</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	<row>
+		<field name="inventoryID">96</field>
+		<field name="stationID">12</field>
+		<field name="productID">8</field>
+		<field name="currentAmount">50</field>
+		<field name="plannedAmount">50</field>
+	</row>
+	</table_data>
+	<table_structure name="products">
+		<field Field="productID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(20)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="price" Type="decimal(3,2)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="durability" Type="int(11)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="products" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="productID" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="products" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="8" Avg_row_length="2048" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="9" Create_time="2020-06-17 07:07:28" Collation="latin1_swedish_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="products">
+	<row>
+		<field name="productID">1</field>
+		<field name="name">Milch</field>
+		<field name="price">1.00</field>
+		<field name="durability">14</field>
+	</row>
+	<row>
+		<field name="productID">2</field>
+		<field name="name">Emmentaler</field>
+		<field name="price">3.95</field>
+		<field name="durability">60</field>
+	</row>
+	<row>
+		<field name="productID">3</field>
+		<field name="name">Gauda</field>
+		<field name="price">3.10</field>
+		<field name="durability">60</field>
+	</row>
+	<row>
+		<field name="productID">4</field>
+		<field name="name">Joghurt 100g</field>
+		<field name="price">0.50</field>
+		<field name="durability">7</field>
+	</row>
+	<row>
+		<field name="productID">5</field>
+		<field name="name">Quark</field>
+		<field name="price">0.90</field>
+		<field name="durability">10</field>
+	</row>
+	<row>
+		<field name="productID">6</field>
+		<field name="name">Joghurt 500g</field>
+		<field name="price">2.00</field>
+		<field name="durability">7</field>
+	</row>
+	<row>
+		<field name="productID">7</field>
+		<field name="name">Streichkaese</field>
+		<field name="price">1.50</field>
+		<field name="durability">21</field>
+	</row>
+	<row>
+		<field name="productID">8</field>
+		<field name="name">Bergkaese</field>
+		<field name="price">5.00</field>
+		<field name="durability">60</field>
+	</row>
+	</table_data>
+	<table_structure name="refill">
+		<field Field="refillID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="suplier" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="stationID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="productID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="amount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="timestamp" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="on update current_timestamp()" Comment="" />
+		<key Table="refill" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="refillID" Collation="A" Cardinality="96" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="refill" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="97" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="refill">
+	<row>
+		<field name="refillID">1</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">1</field>
+		<field name="amount">10</field>
+		<field name="timestamp">2020-06-01 03:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">2</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">3</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">4</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">5</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">6</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">7</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">8</field>
+		<field name="suplier">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">9</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">10</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">11</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">12</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">13</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">14</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">15</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">16</field>
+		<field name="suplier">1</field>
+		<field name="stationID">2</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">17</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">18</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">19</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">20</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">21</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">22</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">23</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">24</field>
+		<field name="suplier">1</field>
+		<field name="stationID">3</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">25</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">26</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">27</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">28</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">29</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">30</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">31</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">32</field>
+		<field name="suplier">1</field>
+		<field name="stationID">4</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">33</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">34</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">35</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">36</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">37</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">38</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">39</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">40</field>
+		<field name="suplier">1</field>
+		<field name="stationID">5</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">41</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">42</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">43</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">44</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">45</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">46</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">47</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">48</field>
+		<field name="suplier">1</field>
+		<field name="stationID">6</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">49</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">50</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">51</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">52</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">53</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">54</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">55</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">56</field>
+		<field name="suplier">1</field>
+		<field name="stationID">7</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">57</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">58</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">59</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">60</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">61</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">62</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">63</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">64</field>
+		<field name="suplier">1</field>
+		<field name="stationID">8</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">65</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">66</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">67</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">68</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">69</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">70</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">71</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">72</field>
+		<field name="suplier">1</field>
+		<field name="stationID">9</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">73</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">74</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">75</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">76</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">77</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">78</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">79</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">80</field>
+		<field name="suplier">1</field>
+		<field name="stationID">10</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">81</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">82</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">83</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">84</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">85</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">86</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">87</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">88</field>
+		<field name="suplier">1</field>
+		<field name="stationID">11</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">89</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">90</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">2</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">91</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">3</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">92</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">4</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">93</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">5</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">94</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">6</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">95</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">7</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	<row>
+		<field name="refillID">96</field>
+		<field name="suplier">1</field>
+		<field name="stationID">12</field>
+		<field name="productID">8</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 05:30:00</field>
+	</row>
+	</table_data>
+	<table_structure name="sales">
+		<field Field="salesID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="stationID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="productID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="sellerID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="amount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="timestamp" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="on update current_timestamp()" Comment="" />
+		<key Table="sales" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="salesID" Collation="A" Cardinality="96" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="sales" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="97" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="sales">
+	<row>
+		<field name="salesID">1</field>
+		<field name="stationID">1</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">2</field>
+		<field name="stationID">1</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">3</field>
+		<field name="stationID">1</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">4</field>
+		<field name="stationID">1</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">5</field>
+		<field name="stationID">1</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">6</field>
+		<field name="stationID">1</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">7</field>
+		<field name="stationID">1</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">8</field>
+		<field name="stationID">1</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">9</field>
+		<field name="stationID">2</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">10</field>
+		<field name="stationID">2</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">11</field>
+		<field name="stationID">2</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">12</field>
+		<field name="stationID">2</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">13</field>
+		<field name="stationID">2</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">14</field>
+		<field name="stationID">2</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">15</field>
+		<field name="stationID">2</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">16</field>
+		<field name="stationID">2</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">17</field>
+		<field name="stationID">3</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">18</field>
+		<field name="stationID">3</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">19</field>
+		<field name="stationID">3</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">20</field>
+		<field name="stationID">3</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">21</field>
+		<field name="stationID">3</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">22</field>
+		<field name="stationID">3</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">23</field>
+		<field name="stationID">3</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">24</field>
+		<field name="stationID">3</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">25</field>
+		<field name="stationID">4</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">26</field>
+		<field name="stationID">4</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">27</field>
+		<field name="stationID">4</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">28</field>
+		<field name="stationID">4</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">29</field>
+		<field name="stationID">4</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">30</field>
+		<field name="stationID">4</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">31</field>
+		<field name="stationID">4</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">32</field>
+		<field name="stationID">4</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">33</field>
+		<field name="stationID">5</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">34</field>
+		<field name="stationID">5</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">35</field>
+		<field name="stationID">5</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">36</field>
+		<field name="stationID">5</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">37</field>
+		<field name="stationID">5</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">38</field>
+		<field name="stationID">5</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">39</field>
+		<field name="stationID">5</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">40</field>
+		<field name="stationID">5</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">41</field>
+		<field name="stationID">6</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">42</field>
+		<field name="stationID">6</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">43</field>
+		<field name="stationID">6</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">44</field>
+		<field name="stationID">6</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">45</field>
+		<field name="stationID">6</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">46</field>
+		<field name="stationID">6</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">47</field>
+		<field name="stationID">6</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">48</field>
+		<field name="stationID">6</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">49</field>
+		<field name="stationID">7</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">50</field>
+		<field name="stationID">7</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">51</field>
+		<field name="stationID">7</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">52</field>
+		<field name="stationID">7</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">53</field>
+		<field name="stationID">7</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">54</field>
+		<field name="stationID">7</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">55</field>
+		<field name="stationID">7</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">56</field>
+		<field name="stationID">7</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">57</field>
+		<field name="stationID">8</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">58</field>
+		<field name="stationID">8</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">59</field>
+		<field name="stationID">8</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">60</field>
+		<field name="stationID">8</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">61</field>
+		<field name="stationID">8</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">62</field>
+		<field name="stationID">8</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">63</field>
+		<field name="stationID">8</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">64</field>
+		<field name="stationID">8</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">65</field>
+		<field name="stationID">9</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">66</field>
+		<field name="stationID">9</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">67</field>
+		<field name="stationID">9</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">68</field>
+		<field name="stationID">9</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">69</field>
+		<field name="stationID">9</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">70</field>
+		<field name="stationID">9</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">71</field>
+		<field name="stationID">9</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">72</field>
+		<field name="stationID">9</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">73</field>
+		<field name="stationID">10</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">74</field>
+		<field name="stationID">10</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">75</field>
+		<field name="stationID">10</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">76</field>
+		<field name="stationID">10</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">77</field>
+		<field name="stationID">10</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">78</field>
+		<field name="stationID">10</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">79</field>
+		<field name="stationID">10</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">80</field>
+		<field name="stationID">10</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">81</field>
+		<field name="stationID">11</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">82</field>
+		<field name="stationID">11</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">83</field>
+		<field name="stationID">11</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">84</field>
+		<field name="stationID">11</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">85</field>
+		<field name="stationID">11</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">86</field>
+		<field name="stationID">11</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">87</field>
+		<field name="stationID">11</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">88</field>
+		<field name="stationID">11</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">89</field>
+		<field name="stationID">12</field>
+		<field name="productID">1</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">90</field>
+		<field name="stationID">12</field>
+		<field name="productID">2</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">91</field>
+		<field name="stationID">12</field>
+		<field name="productID">3</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">92</field>
+		<field name="stationID">12</field>
+		<field name="productID">4</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">93</field>
+		<field name="stationID">12</field>
+		<field name="productID">5</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">94</field>
+		<field name="stationID">12</field>
+		<field name="productID">6</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">95</field>
+		<field name="stationID">12</field>
+		<field name="productID">7</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	<row>
+		<field name="salesID">96</field>
+		<field name="stationID">12</field>
+		<field name="productID">8</field>
+		<field name="sellerID">1</field>
+		<field name="amount">5</field>
+		<field name="timestamp">2020-06-01 06:30:00</field>
+	</row>
+	</table_data>
+	<table_structure name="seller">
+		<field Field="sellerID" Type="int(10)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="type" Type="int(1)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="humanmachineID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="seller" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="sellerID" Collation="A" Cardinality="5" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="seller" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="3276" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="6" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="seller">
+	<row>
+		<field name="sellerID">1</field>
+		<field name="type">1</field>
+		<field name="humanmachineID">1</field>
+	</row>
+	<row>
+		<field name="sellerID">2</field>
+		<field name="type">2</field>
+		<field name="humanmachineID">2</field>
+	</row>
+	<row>
+		<field name="sellerID">3</field>
+		<field name="type">1</field>
+		<field name="humanmachineID">3</field>
+	</row>
+	<row>
+		<field name="sellerID">4</field>
+		<field name="type">2</field>
+		<field name="humanmachineID">4</field>
+	</row>
+	<row>
+		<field name="sellerID">5</field>
+		<field name="type">1</field>
+		<field name="humanmachineID">5</field>
+	</row>
+	</table_data>
+	<table_structure name="station">
+		<field Field="stationID" Type="int(10)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="coordsA" Type="varchar(30)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="coordsL" Type="varchar(30)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="location" Type="varchar(30)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="type" Type="varchar(1)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="description" Type="varchar(50)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="station" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="stationID" Collation="A" Cardinality="12" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="station" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="12" Avg_row_length="1365" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="13" Create_time="2020-06-17 07:07:28" Collation="latin1_swedish_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="station">
+	<row>
+		<field name="stationID">1</field>
+		<field name="coordsA">47.71457225467146</field>
+		<field name="coordsL">10.314338207244873</field>
+		<field name="location">Kempten</field>
+		<field name="type">B</field>
+		<field name="description">Firmensitz</field>
+	</row>
+	<row>
+		<field name="stationID">2</field>
+		<field name="coordsA">47.72426740349347</field>
+		<field name="coordsL">10.316848754882812</field>
+		<field name="location">Kempten</field>
+		<field name="type">A</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">3</field>
+		<field name="coordsA">47.882828716292344</field>
+		<field name="coordsL">10.6264343852617</field>
+		<field name="location">Kaufbeuren</field>
+		<field name="type">V</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">4</field>
+		<field name="coordsA">47.98036221803081</field>
+		<field name="coordsL">10.1788330078125</field>
+		<field name="location">Memmingen</field>
+		<field name="type">B</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">5</field>
+		<field name="coordsA">47.694697038966076</field>
+		<field name="coordsL">10.038070678710938</field>
+		<field name="location">Isny</field>
+		<field name="type">A</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">6</field>
+		<field name="coordsA">47.77941861197757</field>
+		<field name="coordsL">10.616891384124756</field>
+		<field name="location">Marktoberdorf</field>
+		<field name="type">A</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">7</field>
+		<field name="coordsA">47.514634612973694</field>
+		<field name="coordsL">10.26755619153846</field>
+		<field name="location">Sonthofen</field>
+		<field name="type">V</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">8</field>
+		<field name="coordsA">47.41029678060909</field>
+		<field name="coordsL">10.275293827580754</field>
+		<field name="location">Oberstdorf</field>
+		<field name="type">A</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">9</field>
+		<field name="coordsA">47.554643912647045</field>
+		<field name="coordsL">10.022393703984562</field>
+		<field name="location">Oberstaufen</field>
+		<field name="type">A</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">10</field>
+		<field name="coordsA">47.560841627466885</field>
+		<field name="coordsL">10.21770143561298</field>
+		<field name="location">Immenstadt</field>
+		<field name="type">A</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">11</field>
+		<field name="coordsA">47.569648</field>
+		<field name="coordsL">10.700432800000044</field>
+		<field name="location">Fuessen</field>
+		<field name="type">B</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">12</field>
+		<field name="coordsA">47.550241351721596</field>
+		<field name="coordsL">9.69220304476039</field>
+		<field name="location">Lindau</field>
+		<field name="type">B</field>
+		<field name="description">Aussenstelle</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

@@ -1,6 +1,5 @@
 function allStation()
 {
-alert("findStation");
 	var url = "stationREST.php";
 	var method = "action=GET";
 	url += "?"+method;
@@ -32,11 +31,10 @@ alert("findStation");
 		}
 	};
 	request.send(null);
-}
+} 
 
 function findStation()
 {
-alert("findStation");
 	var url = "stationREST.php";
 	var method = "action=GET";
 	var descVal = document.getElementById("location").value;
@@ -81,7 +79,6 @@ function getCoords()
 	var descName = document.getElementById("stationID").name;
 	url += "?"+method+"&"+descName+"="+descVal;
 
-	alert(url);
 
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
@@ -113,7 +110,7 @@ function getCoords()
 
 
 function listStation(stationlist, getstationtable)
-{alert(stationlist+getstationtable);
+{
 	var list = document.getElementById("list");
 	var stations = JSON.parse(stationlist);
 	var stationtable = JSON.parse(getstationtable);
@@ -143,7 +140,7 @@ function listStation(stationlist, getstationtable)
     	    tableattr++; 
     	}
     }
-    tablehead.appendChild(tableRow); alert("länge des tableheaders"+ tableattr);
+    tablehead.appendChild(tableRow);
 
 
 
@@ -185,7 +182,6 @@ function getStationTable()
 
 	var url = "includes/stationtable.json";
 	var request = new XMLHttpRequest();
-	alert(url);
 	request.open("GET", url);
 	request.onload = function()
 	{
