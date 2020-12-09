@@ -7,7 +7,6 @@
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/nav.css" rel="stylesheet"/>
     <script type="text/javascript" src="js/api.js"></script>
-    <script src="js/time.js"></script>
 </head>
 <body onload="listStationIds(); listFillingPlan();">
 <div id="main">
@@ -28,19 +27,16 @@
     <div id="content" style="padding-bottom:20px">
 
         <fieldset>
-
             <!-- Form Name -->
             <legend>Auffüllplan anzeigen</legend>
             <label for="verkaufsstelle">Verkaufsstelle</label>
-            <select name="station" id="verkaufsstelle" onchange="listFillingPlan()">
-            </select>
+            <select name="station" id="verkaufsstelle" onchange="listFillingPlan()"></select>
 
             <fieldset id="list">
                 <legend>Suchergebnis</legend>
-                <table id="verkaufsstelle-liste" style="border: 1px solid black">
-
-                </table>
+                <table id="verkaufsstelle-liste" style="border: 1px solid black"></table>
             </fieldset>
+
         </fieldset>
     </div>
     <div id="menuefooter" class="clmenuefooter">

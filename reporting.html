@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Allgold Supply Center</title>
+    <title>Allgold Premium Molkerei GmbH - Reporting APP</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/nav.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/api.js"></script>
 </head>
-<body onload="listStationIds(); listFilling();">
+<body>
 <div id="main">
     <div id="trailer">
         <img src="media/trailer.jpg" width="750" height="150" alt="trailer">
@@ -16,28 +15,18 @@
     <div id="menuetop">
         <ul id="menu">
             <li>
-                <a href="/">Startseite</a>
-                <a href="lieferanten.html"><b>Lieferanten</b></a>
+                <a href="admin.html">Startseite</a>
+                <a href="lieferanten.html">Lieferanten</a>
                 <a href="verkaufsstellen.html">Verkaufstellen</a>
+                <a href="reporting.html"><b>Reporting</b></a>
                 <a href="sonstiges.html">Sonstiges</a>
             </li>
         </ul>
     </div>
     <!-- page content -->
     <div id="content" style="padding-bottom:20px">
-
-        <fieldset>
-            <!-- Form Name -->
-            <legend>Auffüllungen anzeigen</legend>
-            <label for="verkaufsstelle">Verkaufsstelle</label>
-            <select name="station" id="verkaufsstelle" onchange="listFilling()"></select>
-
-            <fieldset id="list">
-                <legend>Suchergebnis</legend>
-                <table id="auffuellungen-liste" style="border: 1px solid black"></table>
-            </fieldset>
-
-        </fieldset>
+        <h3>Reporting App</h3>
+        <a href="lagerverwaltung.html"> Lagerverwaltung </a><br>
     </div>
     <div id="menuefooter" class="clmenuefooter">
     </div>
