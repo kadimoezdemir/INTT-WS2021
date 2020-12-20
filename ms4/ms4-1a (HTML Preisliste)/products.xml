@@ -4,18 +4,18 @@
 - version 5.0.2
 - https://www.phpmyadmin.net
 -
-- Host: localhost
-- Generation Time: Jun 17, 2020 at 10:35 AM
-- Server version: 10.4.11-MariaDB
-- PHP Version: 7.4.6
+- Host: 127.0.0.1
+- Erstellungszeit: 19. Dez 2020 um 19:39
+- Server-Version: 10.4.14-MariaDB
+- PHP-Version: 7.4.10
 -->
 
 <pma_xml_export version="1.0">
     <!--
-    - Database: 'itdb'
+    - Datenbank: 'allgolddb'
     -->
-    <database name="itdb">
-        <!-- Table products -->
+    <database name="allgolddb">
+        <!-- Tabelle products -->
         <table name="products">
             <column name="productID">1</column>
             <column name="name">Milch</column>

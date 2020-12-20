@@ -1,1 +1,0 @@
-mysqldump --xml -u root -p -h 127.0.0.1 itdb >C:\users\fabian\desktop\dump.sql

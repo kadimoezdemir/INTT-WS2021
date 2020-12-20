@@ -1,70 +1,70 @@
 <?xml version="1.0"?>
 <mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<database name="itdb">
+<database name="allgolddb">
 	<table_structure name="inventory">
-		<field Field="inventoryID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="inventoryID" Type="int(11)" Null="NO" Key="PRI" Extra="" Comment="" />
 		<field Field="stationID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="productID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="currentAmount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="plannedAmount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="inventory" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="inventoryID" Collation="A" Cardinality="96" Null="" Index_type="BTREE" Comment="" Index_comment="" />
-		<options Name="inventory" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="97" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+		<options Name="inventory" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2020-12-11 12:13:31" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
 	</table_structure>
 	<table_data name="inventory">
 	<row>
 		<field name="inventoryID">1</field>
 		<field name="stationID">1</field>
 		<field name="productID">1</field>
-		<field name="currentAmount">20</field>
+		<field name="currentAmount">30</field>
 		<field name="plannedAmount">50</field>
 	</row>
 	<row>
 		<field name="inventoryID">2</field>
 		<field name="stationID">1</field>
 		<field name="productID">2</field>
-		<field name="currentAmount">50</field>
+		<field name="currentAmount">30</field>
 		<field name="plannedAmount">50</field>
 	</row>
 	<row>
 		<field name="inventoryID">3</field>
 		<field name="stationID">1</field>
 		<field name="productID">3</field>
-		<field name="currentAmount">15</field>
+		<field name="currentAmount">20</field>
 		<field name="plannedAmount">30</field>
 	</row>
 	<row>
 		<field name="inventoryID">4</field>
 		<field name="stationID">1</field>
 		<field name="productID">4</field>
-		<field name="currentAmount">50</field>
+		<field name="currentAmount">45</field>
 		<field name="plannedAmount">50</field>
 	</row>
 	<row>
 		<field name="inventoryID">5</field>
 		<field name="stationID">1</field>
 		<field name="productID">5</field>
-		<field name="currentAmount">15</field>
+		<field name="currentAmount">20</field>
 		<field name="plannedAmount">50</field>
 	</row>
 	<row>
 		<field name="inventoryID">6</field>
 		<field name="stationID">1</field>
 		<field name="productID">6</field>
-		<field name="currentAmount">30</field>
+		<field name="currentAmount">25</field>
 		<field name="plannedAmount">30</field>
 	</row>
 	<row>
 		<field name="inventoryID">7</field>
 		<field name="stationID">1</field>
 		<field name="productID">7</field>
-		<field name="currentAmount">50</field>
+		<field name="currentAmount">15</field>
 		<field name="plannedAmount">50</field>
 	</row>
 	<row>
 		<field name="inventoryID">8</field>
 		<field name="stationID">1</field>
 		<field name="productID">8</field>
-		<field name="currentAmount">30</field>
+		<field name="currentAmount">25</field>
 		<field name="plannedAmount">30</field>
 	</row>
 	<row>
@@ -684,13 +684,94 @@
 		<field name="plannedAmount">50</field>
 	</row>
 	</table_data>
+	<table_structure name="machine_sellers">
+		<field Field="machine_id" Type="int(10)" Null="NO" Key="PRI" Extra="" Comment="" />
+		<field Field="modell" Type="text" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="location" Type="varchar(30)" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="firstDay" Type="date" Null="NO" Key="" Extra="" Comment="" />
+		<field Field="status" Type="varchar(30)" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="machine_sellers" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="machine_id" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="machine_sellers" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2020-12-11 12:13:31" Collation="utf8_german2_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+	</table_structure>
+	<table_data name="machine_sellers">
+	<row>
+		<field name="machine_id">1</field>
+		<field name="modell">X2010</field>
+		<field name="location">Kempten-HS</field>
+		<field name="firstDay">2017-10-01</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">2</field>
+		<field name="modell">A2018</field>
+		<field name="location">Kempten</field>
+		<field name="firstDay">2018-03-01</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">3</field>
+		<field name="modell">X2018</field>
+		<field name="location">Memmingen</field>
+		<field name="firstDay">2018-03-01</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">4</field>
+		<field name="modell">A2018</field>
+		<field name="location">Isny</field>
+		<field name="firstDay">2018-03-02</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">5</field>
+		<field name="modell">A2018</field>
+		<field name="location">Marktoberdorf</field>
+		<field name="firstDay">2018-03-05</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">6</field>
+		<field name="modell">A2018</field>
+		<field name="location">Oberstdorf</field>
+		<field name="firstDay">2018-03-06</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">7</field>
+		<field name="modell">A2018</field>
+		<field name="location">Oberstaufen</field>
+		<field name="firstDay">2018-03-06</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">8</field>
+		<field name="modell">A2018</field>
+		<field name="location">Immenstadt</field>
+		<field name="firstDay">2018-03-06</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">9</field>
+		<field name="modell">X2018</field>
+		<field name="location">Fuessen</field>
+		<field name="firstDay">2018-03-05</field>
+		<field name="status">aktiv</field>
+	</row>
+	<row>
+		<field name="machine_id">10</field>
+		<field name="modell">X2018</field>
+		<field name="location">Lindau</field>
+		<field name="firstDay">2018-03-02</field>
+		<field name="status">aktiv</field>
+	</row>
+	</table_data>
 	<table_structure name="products">
-		<field Field="productID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="productID" Type="int(11)" Null="NO" Key="PRI" Extra="" Comment="" />
 		<field Field="name" Type="varchar(20)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="price" Type="decimal(3,2)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="durability" Type="int(11)" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="products" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="productID" Collation="A" Cardinality="8" Null="" Index_type="BTREE" Comment="" Index_comment="" />
-		<options Name="products" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="8" Avg_row_length="2048" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="9" Create_time="2020-06-17 07:07:28" Collation="latin1_swedish_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+		<options Name="products" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="8" Avg_row_length="2048" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2020-12-11 12:13:31" Collation="latin1_swedish_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
 	</table_structure>
 	<table_data name="products">
 	<row>
@@ -743,14 +824,14 @@
 	</row>
 	</table_data>
 	<table_structure name="refill">
-		<field Field="refillID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="refillID" Type="int(11)" Null="NO" Key="PRI" Extra="" Comment="" />
 		<field Field="suplier" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="stationID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="productID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="amount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="timestamp" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="on update current_timestamp()" Comment="" />
 		<key Table="refill" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="refillID" Collation="A" Cardinality="96" Null="" Index_type="BTREE" Comment="" Index_comment="" />
-		<options Name="refill" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="97" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+		<options Name="refill" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2020-12-11 12:13:31" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
 	</table_structure>
 	<table_data name="refill">
 	<row>
@@ -1523,14 +1604,14 @@
 	</row>
 	</table_data>
 	<table_structure name="sales">
-		<field Field="salesID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="salesID" Type="int(11)" Null="NO" Key="PRI" Extra="" Comment="" />
 		<field Field="stationID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="productID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="sellerID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="amount" Type="int(3)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="timestamp" Type="timestamp" Null="NO" Key="" Default="current_timestamp()" Extra="on update current_timestamp()" Comment="" />
 		<key Table="sales" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="salesID" Collation="A" Cardinality="96" Null="" Index_type="BTREE" Comment="" Index_comment="" />
-		<options Name="sales" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="97" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+		<options Name="sales" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="96" Avg_row_length="170" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2020-12-11 12:13:14" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
 	</table_structure>
 	<table_data name="sales">
 	<row>
@@ -1539,7 +1620,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">2</field>
@@ -1547,7 +1628,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">3</field>
@@ -1555,7 +1636,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">4</field>
@@ -1563,7 +1644,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">5</field>
@@ -1571,7 +1652,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">6</field>
@@ -1579,7 +1660,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">7</field>
@@ -1587,7 +1668,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">8</field>
@@ -1595,7 +1676,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">9</field>
@@ -1603,7 +1684,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">10</field>
@@ -1611,7 +1692,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">11</field>
@@ -1619,7 +1700,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">12</field>
@@ -1627,7 +1708,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">13</field>
@@ -1635,7 +1716,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">14</field>
@@ -1643,7 +1724,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">15</field>
@@ -1651,7 +1732,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">16</field>
@@ -1659,7 +1740,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">17</field>
@@ -1667,7 +1748,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">18</field>
@@ -1675,7 +1756,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">19</field>
@@ -1683,7 +1764,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">20</field>
@@ -1691,7 +1772,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">21</field>
@@ -1699,7 +1780,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">22</field>
@@ -1707,7 +1788,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">23</field>
@@ -1715,7 +1796,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">24</field>
@@ -1723,7 +1804,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">25</field>
@@ -1731,7 +1812,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">26</field>
@@ -1739,7 +1820,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">27</field>
@@ -1747,7 +1828,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">28</field>
@@ -1755,7 +1836,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">29</field>
@@ -1763,7 +1844,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">30</field>
@@ -1771,7 +1852,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">31</field>
@@ -1779,7 +1860,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">32</field>
@@ -1787,7 +1868,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">33</field>
@@ -1795,7 +1876,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">34</field>
@@ -1803,7 +1884,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">35</field>
@@ -1811,7 +1892,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">36</field>
@@ -1819,7 +1900,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">37</field>
@@ -1827,7 +1908,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">38</field>
@@ -1835,7 +1916,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">39</field>
@@ -1843,7 +1924,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">40</field>
@@ -1851,7 +1932,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">41</field>
@@ -1859,7 +1940,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">42</field>
@@ -1867,7 +1948,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">43</field>
@@ -1875,7 +1956,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">44</field>
@@ -1883,7 +1964,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">45</field>
@@ -1891,7 +1972,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">46</field>
@@ -1899,7 +1980,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">47</field>
@@ -1907,7 +1988,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">48</field>
@@ -1915,7 +1996,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">49</field>
@@ -1923,7 +2004,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">50</field>
@@ -1931,7 +2012,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">51</field>
@@ -1939,7 +2020,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">52</field>
@@ -1947,7 +2028,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">53</field>
@@ -1955,7 +2036,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">54</field>
@@ -1963,7 +2044,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">55</field>
@@ -1971,7 +2052,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">56</field>
@@ -1979,7 +2060,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">57</field>
@@ -1987,7 +2068,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">58</field>
@@ -1995,7 +2076,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">59</field>
@@ -2003,7 +2084,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">60</field>
@@ -2011,7 +2092,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">61</field>
@@ -2019,7 +2100,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">62</field>
@@ -2027,7 +2108,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">63</field>
@@ -2035,7 +2116,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">64</field>
@@ -2043,7 +2124,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">65</field>
@@ -2051,7 +2132,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">66</field>
@@ -2059,7 +2140,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">67</field>
@@ -2067,7 +2148,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">68</field>
@@ -2075,7 +2156,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">69</field>
@@ -2083,7 +2164,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">70</field>
@@ -2091,7 +2172,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">71</field>
@@ -2099,7 +2180,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">72</field>
@@ -2107,7 +2188,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">73</field>
@@ -2115,7 +2196,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">74</field>
@@ -2123,7 +2204,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">75</field>
@@ -2131,7 +2212,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">76</field>
@@ -2139,7 +2220,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">77</field>
@@ -2147,7 +2228,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">78</field>
@@ -2155,7 +2236,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">79</field>
@@ -2163,7 +2244,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">80</field>
@@ -2171,7 +2252,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">81</field>
@@ -2179,7 +2260,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">82</field>
@@ -2187,7 +2268,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">83</field>
@@ -2195,7 +2276,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">84</field>
@@ -2203,7 +2284,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">85</field>
@@ -2211,7 +2292,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">86</field>
@@ -2219,7 +2300,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">87</field>
@@ -2227,7 +2308,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">88</field>
@@ -2235,7 +2316,7 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">89</field>
@@ -2243,7 +2324,7 @@
 		<field name="productID">1</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">90</field>
@@ -2251,7 +2332,7 @@
 		<field name="productID">2</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">91</field>
@@ -2259,7 +2340,7 @@
 		<field name="productID">3</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">92</field>
@@ -2267,7 +2348,7 @@
 		<field name="productID">4</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">93</field>
@@ -2275,7 +2356,7 @@
 		<field name="productID">5</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">94</field>
@@ -2283,7 +2364,7 @@
 		<field name="productID">6</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">95</field>
@@ -2291,7 +2372,7 @@
 		<field name="productID">7</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	<row>
 		<field name="salesID">96</field>
@@ -2299,15 +2380,15 @@
 		<field name="productID">8</field>
 		<field name="sellerID">1</field>
 		<field name="amount">5</field>
-		<field name="timestamp">2020-06-01 06:30:00</field>
+		<field name="timestamp">2021-01-01 06:30:00</field>
 	</row>
 	</table_data>
 	<table_structure name="seller">
-		<field Field="sellerID" Type="int(10)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="sellerID" Type="int(10)" Null="NO" Key="PRI" Extra="" Comment="" />
 		<field Field="type" Type="int(1)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="humanmachineID" Type="int(10)" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="seller" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="sellerID" Collation="A" Cardinality="5" Null="" Index_type="BTREE" Comment="" Index_comment="" />
-		<options Name="seller" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="3276" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="6" Create_time="2020-06-17 07:07:28" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+		<options Name="seller" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="5" Avg_row_length="3276" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Create_time="2020-12-11 12:12:57" Collation="utf8mb4_general_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
 	</table_structure>
 	<table_data name="seller">
 	<row>
@@ -2344,7 +2425,7 @@
 		<field Field="type" Type="varchar(1)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="description" Type="varchar(50)" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="station" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="stationID" Collation="A" Cardinality="12" Null="" Index_type="BTREE" Comment="" Index_comment="" />
-		<options Name="station" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="12" Avg_row_length="1365" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="13" Create_time="2020-06-17 07:07:28" Collation="latin1_swedish_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
+		<options Name="station" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="12" Avg_row_length="1365" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="15" Create_time="2020-12-06 13:11:44" Collation="latin1_swedish_ci" Create_options="" Comment="" Max_index_length="0" Temporary="N" />
 	</table_structure>
 	<table_data name="station">
 	<row>
@@ -2361,7 +2442,7 @@
 		<field name="coordsL">10.316848754882812</field>
 		<field name="location">Kempten</field>
 		<field name="type">A</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">3</field>
@@ -2369,7 +2450,7 @@
 		<field name="coordsL">10.6264343852617</field>
 		<field name="location">Kaufbeuren</field>
 		<field name="type">V</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">4</field>
@@ -2377,7 +2458,7 @@
 		<field name="coordsL">10.1788330078125</field>
 		<field name="location">Memmingen</field>
 		<field name="type">B</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">5</field>
@@ -2385,7 +2466,7 @@
 		<field name="coordsL">10.038070678710938</field>
 		<field name="location">Isny</field>
 		<field name="type">A</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">6</field>
@@ -2393,7 +2474,7 @@
 		<field name="coordsL">10.616891384124756</field>
 		<field name="location">Marktoberdorf</field>
 		<field name="type">A</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">7</field>
@@ -2401,7 +2482,7 @@
 		<field name="coordsL">10.26755619153846</field>
 		<field name="location">Sonthofen</field>
 		<field name="type">V</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">8</field>
@@ -2409,7 +2490,7 @@
 		<field name="coordsL">10.275293827580754</field>
 		<field name="location">Oberstdorf</field>
 		<field name="type">A</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">9</field>
@@ -2417,7 +2498,7 @@
 		<field name="coordsL">10.022393703984562</field>
 		<field name="location">Oberstaufen</field>
 		<field name="type">A</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">10</field>
@@ -2425,15 +2506,15 @@
 		<field name="coordsL">10.21770143561298</field>
 		<field name="location">Immenstadt</field>
 		<field name="type">A</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">11</field>
 		<field name="coordsA">47.569648</field>
 		<field name="coordsL">10.700432800000044</field>
-		<field name="location">Fuessen</field>
+		<field name="location">Füssen</field>
 		<field name="type">B</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
 	</row>
 	<row>
 		<field name="stationID">12</field>
@@ -2441,7 +2522,15 @@
 		<field name="coordsL">9.69220304476039</field>
 		<field name="location">Lindau</field>
 		<field name="type">B</field>
-		<field name="description">Aussenstelle</field>
+		<field name="description">Außenstelle</field>
+	</row>
+	<row>
+		<field name="stationID">13</field>
+		<field name="coordsA">41</field>
+		<field name="coordsL">41</field>
+		<field name="location">Mexico</field>
+		<field name="type">V</field>
+		<field name="description">MexiMilk</field>
 	</row>
 	</table_data>
 </database>
